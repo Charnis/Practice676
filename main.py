@@ -40,3 +40,12 @@ def calculator():
                 c = a / b
                 print(f"Результат деления: {c}")
 
+def random_number():
+    try:
+        low = int(input("Нижняя граница: "))
+        high = int(input("Верхняя граница: "))
+        if low > high:
+            low, high = high, low
+        print(f"Случайное число: {random.randint(low, high)}")
+    except ValueError:
+        print("Ошибка: введите целые числа!")
