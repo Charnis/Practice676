@@ -40,3 +40,18 @@ def calculator():
                 c = a / b
                 print(f"Результат деления: {c}")
 
+def temperature_converter():
+    print("1. Цельсий → Фаренгейт")
+    print("2. Фаренгейт → Цельсий")
+    choice = input("Выберите направление: ")
+    try:
+        temp = float(input("Введите температуру: "))
+        if choice == '1':
+            print(f"{temp}°C = {temp * 9/5 + 32}°F")
+        elif choice == '2':
+            print(f"{temp}°F = {(temp - 32) * 5/9}°C")
+        else:
+            print("Неверный выбор")
+    except ValueError:
+        print("Ошибка: введите число!")
+
