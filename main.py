@@ -40,3 +40,7 @@ def calculator():
                 c = a / b
                 print(f"Результат деления: {c}")
 
+def word_counter():
+    text = input("Введите строку: ")
+    words = text.strip().split()
+    print(f"Количество слов: {len(words)}")
