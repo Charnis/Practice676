@@ -40,6 +40,7 @@ def calculator():
                 c = a / b
                 print(f"Результат деления: {c}")
 
+<<<<<<< HEAD
 def random_number():
     try:
         low = int(input("Нижняя граница: "))
@@ -63,3 +64,8 @@ def temperature_converter():
             print("Неверный выбор")
     except ValueError:
         print("Ошибка: введите число!")
+
+def word_counter():
+    text = input("Введите строку: ")
+    words = text.strip().split()
+    print(f"Количество слов: {len(words)}")
