@@ -41,6 +41,7 @@ def calculator():
                 print(f"Результат деления: {c}")
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 def random_number():
     try:
         low = int(input("Нижняя граница: "))
@@ -69,3 +70,30 @@ def word_counter():
     text = input("Введите строку: ")
     words = text.strip().split()
     print(f"Количество слов: {len(words)}")
+
+def main():
+    while True:
+        print("\n=== Главное меню ===")
+        print("1. Калькулятор")
+        print("2. Генератор случайных чисел")
+        print("3. Конвертер температур")
+        print("4. Счётчик слов")
+        print("0. Выход")
+        choice = input("Ваш выбор: ")
+
+if choice == '1':
+    calculator()
+elif choice == '2':
+    random_number()
+elif choice == '3':
+    temperature_converter()
+elif choice == '4':
+    word_counter()
+elif choice == '0':
+    print("До свидания!")
+    break
+else:
+    print("ХА-ХА-ХА, ты че ваще давай по-другому глуппый блин ХА-ХА-ХА.")
+
+if __name__ == "__main__":
+    main()
